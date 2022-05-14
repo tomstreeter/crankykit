@@ -1,0 +1,127 @@
+/**
+ *
+ * Baseline CSS Starter based extensively on the work of:
+ * 
+ * Rachel Andrews,
+ * Andy Bell,
+ * Stephanie Eckles,
+ * Eric Meyer
+ * Heydon Pickering,
+ * Jenn Simmons,
+ * Jeffery Zeldman
+ *
+ * And more than I can possibly name. The point here is that I didn't make any of this up. 
+ *
+ * -----------------
+ * Table of Contents
+ * -----------------
+ * 1. Design Tokens
+ * 2. Composition Rules
+ * 3. Utility Rules
+ * 4. Block Rules
+ * 5. Exception Rules
+ */
+
+/*=============================================
+=            DESIGN TOKENS            =
+=============================================*/
+
+/* Base Colors */
+:root {
+    --black: hsl(0, 0%, 5%);
+    --white: hsl(0, 0%, 98%);
+    --red: hsl(var(--red-hue),100%,50%);
+    --orange: hsl(var(--orange-hue),100%,50%);
+    --gold: hsl(var(--gold-hue),100%,50%);
+    --yellow: hsl(var(--yellow-hue),100%,50%);
+    --green: hsl(var(--green-hue),100%,50%);
+    --cyan: hsl(var(--cyan-hue),100%,50%);
+    --blue: hsl(var(--blue-hue),100%,50%);
+    --purple: hsl(var(--purple-hue),100%,50%);
+    --magenta: hsl(var(--magenta-hue),100%,50%);
+}
+
+/* HSL Hues */
+:root {
+
+    --red-hue: 0;
+    --orange-hue: 30;
+    --gold-hue: 45;
+    --yellow-hue: 60;
+    --green-hue: 120;
+    --cyan-hue: 180;
+    --blue-hue: 240;
+    --purple-hue: 270;
+    --magenta-hue: 300;
+}
+
+
+
+
+
+/* Typography */
+
+:root {
+    --system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --serif: "Times", "Times New Roman", serif;
+    --sans: "Arial", "Helvetica", "Helvetica Neue", sans-serif;
+    --mono: "Courier", "Courier New", monospace;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1400,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+    --step--2: clamp(0.69rem, 0.66rem + 0.16vw, 0.80rem);
+    --step--1: clamp(0.83rem, 0.78rem + 0.25vw, 1.00rem);
+    --step-0: clamp(1.00rem, 0.93rem + 0.37vw, 1.25rem);
+    --step-1: clamp(1.20rem, 1.09rem + 0.54vw, 1.56rem);
+    --step-2: clamp(1.44rem, 1.29rem + 0.76vw, 1.95rem);
+    --step-3: clamp(1.73rem, 1.52rem + 1.06vw, 2.44rem);
+    --step-4: clamp(2.07rem, 1.78rem + 1.45vw, 3.05rem);
+    --step-5: clamp(2.49rem, 2.09rem + 1.97vw, 3.82rem);
+}
+
+/* Spacing */
+
+/* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1400,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl */
+
+:root {
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem);
+  --space-2xs: clamp(0.50rem, calc(0.46rem + 0.19vw), 0.63rem);
+  --space-xs: clamp(0.75rem, calc(0.69rem + 0.28vw), 0.94rem);
+  --space-s: clamp(1.00rem, calc(0.93rem + 0.37vw), 1.25rem);
+  --space-m: clamp(1.50rem, calc(1.39rem + 0.56vw), 1.88rem);
+  --space-l: clamp(2.00rem, calc(1.85rem + 0.74vw), 2.50rem);
+  --space-xl: clamp(3.00rem, calc(2.78rem + 1.11vw), 3.75rem);
+  --space-2xl: clamp(4.00rem, calc(3.70rem + 1.48vw), 5.00rem);
+  --space-3xl: clamp(6.00rem, calc(5.56rem + 2.22vw), 7.50rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.56vw), 0.63rem);
+  --space-2xs-xs: clamp(0.50rem, calc(0.37rem + 0.65vw), 0.94rem);
+  --space-xs-s: clamp(0.75rem, calc(0.60rem + 0.74vw), 1.25rem);
+  --space-s-m: clamp(1.00rem, calc(0.74rem + 1.30vw), 1.88rem);
+  --space-m-l: clamp(1.50rem, calc(1.20rem + 1.48vw), 2.50rem);
+  --space-l-xl: clamp(2.00rem, calc(1.48rem + 2.59vw), 3.75rem);
+  --space-xl-2xl: clamp(3.00rem, calc(2.41rem + 2.96vw), 5.00rem);
+  --space-2xl-3xl: clamp(4.00rem, calc(2.96rem + 5.19vw), 7.50rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.00rem, calc(0.56rem + 2.22vw), 2.50rem);
+  --space-s-xl: clamp(1.00rem, calc(0.19rem + 4.07vw), 3.75rem);
+}
+
+
+
+/* borders */
+:root {
+    --border-hairline: 1px;
+    --border-3xs: var(--space-3xs);
+    --border-2xs: var(--space-2xs);
+    --border-xs: var(--space-1xs);
+    --radius-3xs: var(--space-3-xs);
+    --radius-2xs: var(--space-2xs);
+    --radius-xs: var(--space-xs);
+}
+
+/*=====  End of DESIGN TOKENS  ======*/

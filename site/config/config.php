@@ -3,7 +3,7 @@
 return [
     'panel' => [
         // Set to false after installation on production
-        'install' => true,
+        'install' => false,
         // change panel slug
         'slug' => 'knockknock',
     ]

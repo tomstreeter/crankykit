@@ -1,0 +1,42 @@
+/*=============================================
+=            UTILITY            =
+=============================================*/
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack>*,
+.stack.recursive * {
+    margin-block: 0;
+}
+
+.stack>*+*,
+.stack.recursive *+* {
+    margin-block-start: var(--stack-gap, var(--space-s));
+}
+
+.box {
+    color: var(--text-color, var(--black));
+    background-color: var(--bg-color, transparent);
+    border: var(--border-color, transparent) var(--border-width, var(--space-3xs)) var(--border-style, solid);
+    border-radius: var(--border-radius, 0rem);
+    padding: var(--box-pad, var(--space-m));
+    outline: 0.125rem solid transparent;
+    outline-offset: -0.125rem;
+}
+
+box * {
+    color: inherit;
+}
+
+.box.invert {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+
+
+
+/*=====  End of UTILITY  ======*/
