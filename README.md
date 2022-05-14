@@ -16,6 +16,16 @@ This is an opinionated version of [Kirby Plainkit](https://GitHub.com/getkirby/p
     ```Header set Cache-Control "no cache, private"``` 
     
     to minimize the impact of Siteground's dynamic caching on Kirby license validation.
+5. The Kirby system files are included as a Git submodule so updating version is more automated. If you just clone this repository you will __not__ automatically download Kirby (the directory will be there, but it will be empty). Navigate into the Kirby directory and issue the command
+
+    ```git submodule init```, 
+
+    then
+
+    ```git submodule update```.
+
+    Any time you need to update the system files, just run the second command (```git submodule update```) again. The Kirby documentation encourages you to delete ```/public_html/media``` any time the Kirby version changes. It will be regenerated as needed.
+
 6. `index.html` is also located in `public_html` and is pictured below. Out of the box, Kirby assumes a flat directory structure.  
 
     <img width="688" alt="screenshot of index.php" src="https://user-images.githubusercontent.com/284185/165156578-c05be891-641d-44b5-92ba-22588e260044.png">
@@ -26,7 +36,7 @@ This is an opinionated version of [Kirby Plainkit](https://GitHub.com/getkirby/p
       The location of the non-public files are not required to be in the parent of the web root.
       The only thing that's required is that the directory of the non-public files are reachable via a relative path
       from the public web root.
-7. The `/media' directory will be created in the public web root.
+7. The `/media' directory will be created in the public web root. It can be deleted at any time and it will be regenerated as needed.
 8. A `/storage` directory has been added as a sibling to `/content` and `/ site` to contain `/accounts`, `/cache`, and `/sessions`.
    These subdirectories should be writable by the web server.
-10. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics.
+10. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics. A basic CSS scaffold is included.
