@@ -2,13 +2,13 @@
 
 ## Overview
 
-This is an opinionated version of [Kirby Plainkit](https://GitHub.com/getkirby/plainkit.git) meant to be used on shared hosting plans that allow the user to load files _outside_ the public web root directory. It's configured to work on [Siteground](https://siteground.com) hosting out of the box, but can be easily adapted to other hosts. There are no symlinks; the only files in the public web root directory are those that Kirby requires to be there. Everything else is safely outside the web server's grasp. 
+This is an opinionated version of [Kirby Plainkit](https://GitHub.com/getkirby/plainkit.git) meant to be used on shared hosting plans that allow the user to load files _outside_ the public web root directory. It's configured to work on [Siteground](https://siteground.com) hosting out of the box, but can be easily adapted to other hosts. There are no symlinks; the only files in the public web root directory are those that absolutely have to be there. Everything else is safely outside the web server's gaze.
 
 *_Note_*: The Kirby documentation refers to what I call the _public web root directory_ simply as the _document root_. I use the longer phrase to emphasize a distinction between the directory you land in when you log in to whatever hosting service you use (e.g., your account's home directory) and the directory that contains the actual bits that are sent out by the web server (the _public web root directory_, or _document root_). If there _is_ no difference between your account's home directory and the document root, use [the standard installation instructions](https://getkirby.com/docs/guide/quickstart#download-and-installation) because none of what's here will help you.
 
 If the previous paragraph makes no sense, do yourself a favor and just install Kirby as it says in [the standard installation instructions](https://getkirby.com/docs/guide/quickstart#download-and-installation).
 
-I made this because I was a bit unclear on how to make this work and I've seen questions from newbies like me on the excellent [support forum](https://forum.getkirby.com) from time to time and I thought it'd be nice to have a nice starting point for my own new Kirby projects.
+I made this because I was a bit unclear on how to make this work and I've seen questions from newbies (like me) on the excellent [support forum](https://forum.getkirby.com) from time to time. I thought it'd be nice to have a nice starting point for my own new Kirby projects and maybe save someone else some work.
 
 The core Kirby system files are referenced as a git submodule (which means the files aren't physically included in this repository, only a pointer to where you can find them). The real point of this repository is to document where all the bits that _aren't_ core Kirby files need to go. See the [`Installation`](#installation) instructions below to learn how to get the required Kirby files.
 
@@ -47,14 +47,15 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
     ```Header set Cache-Control "no cache, private"``` 
     
     to minimize the impact of Siteground's dynamic caching on Kirby license validation. See [this discussion](https://forum.getkirby.com/t/kirby-3-panel-not-updating-server-caching-or-license-key-issue/21444) for the gory details about why this is here. 
-5. `index.php` is located in `public_html` and is pictured below. Out-of-the-box, Kirby assumes all files and subdirectories are going into the public web root directory. 
+5. `index.php` is located in `public_html` and is shown  below.
+
+    It's useful to remember that, out-of-the-box, Kirby assumes all files and subdirectories are going into the public web root directory. This `index.php` file tells Kirby where to find things when they're not all in one directory. 
 
     <img width="688" alt="screenshot of index.php" src="https://user-images.githubusercontent.com/284185/165156578-c05be891-641d-44b5-92ba-22588e260044.png">
-    * Line 3 (```require __DIR__ .'/../kirby/bootstrap.php';```)  assumes that the `/kirby` directory is a _sibling_ of the public web root directory. You may need to adjust this if your hosting setup is different.
-    
+
+    * Line 3  assumes that the `/kirby` directory is a _sibling_ of the public web root directory. You may need to adjust this if your hosting setup is different.
     * Line 7 takes care of determining the path of the public web root directory.  It doesn't need to be specified anywhere else.
-    
-    * Line 8 is written to determine the _parent_ of the public web root directory because on Siteground it's possible to install files in directories that are its siblings. This may not be the case on your hosting provider. The only thing that's required is that the directory of the non-public files are reachable via a relative path from the public web root.
+    * Line 8, much like Line 3, is written to determine the _parent_ of the public web root directory because on Siteground it's possible to install files in directories that are its siblings. This may not be the case on your hosting provider. The only thing that's required is that the directory of the non-public files are reachable via a relative path from the public web root.
 
 6. The `/media' directory will be created in the public web root. It can be deleted at any time and it will be regenerated as needed.
 7. A `/storage` directory has been added as a sibling to `/content` and `/ site` to contain `/accounts`, `/cache`, and `/sessions`.
