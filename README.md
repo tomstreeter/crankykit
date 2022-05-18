@@ -4,11 +4,11 @@
 
 This is an opinionated version of [Kirby Plainkit](https://GitHub.com/getkirby/plainkit.git) meant to be used on shared hosting plans that allow the user to load files _outside_ the public web root directory. It's configured to work on [Siteground](https://siteground.com) hosting out of the box, but can be easily adapted to other hosts. There are no symlinks; the only files in the public web root directory are those that absolutely have to be there. Everything else is safely outside the web server's gaze.
 
-*_Note_*: The Kirby documentation refers to what I call the _public web root directory_ simply as the _document root_. I use the longer phrase to emphasize a distinction between the directory you land in when you log in to whatever hosting service you use (e.g., your account's home directory) and the directory that contains the actual bits that are sent out by the web server (the _public web root directory_, or _document root_). If there _is_ no difference between your account's home directory and the document root, use [the standard installation instructions](https://getkirby.com/docs/guide/quickstart#download-and-installation) because none of what's here will help you.
+*_Note_*: The Kirby documentation refers to what I call the _public web root directory_ simply as the _document root_. I use the longer phrase to emphasize a distinction between the directory you land in when you log in to whatever hosting service you use (e.g., your account's home directory) and the directory that contains the actual bits that are sent out by the web server (the _public web root directory_, or _document root_). If, when you log in to your hosting account, you can only see the contents of the public web root directory, use [the standard installation instructions](https://getkirby.com/docs/guide/quickstart#download-and-installation) because that's how Kirby will work best for you. 
 
-If the previous paragraph makes no sense, do yourself a favor and just install Kirby as it says in [the standard installation instructions](https://getkirby.com/docs/guide/quickstart#download-and-installation).
+If the previous paragraph makes no sense, do yourself a favor and just install Kirby as it says in [the standard installation instructions](https://getkirby.com/docs/guide/quickstart#download-and-installation). 
 
-I made this because I was a bit unclear on how to make this work and I've seen questions from newbies (like me) on the excellent [support forum](https://forum.getkirby.com) from time to time. I thought it'd be nice to have a nice starting point for my own new Kirby projects and maybe save someone else some work.
+I made this because I I thought it'd be nice to have a nice starting point for my own new Kirby projects. I've seen questions from newbies (like me) on the excellent [support forum](https://forum.getkirby.com) from time to time about about how a public 
 
 The core Kirby system files are referenced as a git submodule (which means the files aren't physically included in this repository, only a pointer to where you can find them). The real point of this repository is to document where all the bits that _aren't_ core Kirby files need to go. See the [`Installation`](#installation) instructions below to learn how to get the required Kirby files.
 
@@ -32,16 +32,15 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
 
     ```git submodule update```.
 
-
     Any time you need to update the Kirby files in the latter two scenarios, just run the command ```git submodule update``` again. The Kirby documentation encourages you to delete ```/public_html/media``` any time the Kirby version changes. The directory will be regenerated as needed.
 
 ## Details
+ 
+2. The public web root directory is called `/public_html` on Siteground hosting. You may need to adjust this to match whatever convention your hossting provider uses.
 
-1. This is adapted from the [Public Folder Setup](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup) example in the [Kirby Guide](https://getkirby.com/docs/guide). 
-2. The public web root directory is called `/public_html` on Siteground. You may need to change this.
 3. Two configuration files are included in `/site/config`.  
     * `config.php` allows the panel to be installed on a remote server and changes the page slug for the panel from `myexample.com/panel` to `myexample.com/knockknock`. Seek professional help is that's the slug you want to use.
-    * `config.crankykit.test.php` turns on debugging only on a host that answers to the name `crankykit.test`.  Make it your own by changing the name to that works on your development setup.
+    * `config.crankykit.test.php` turns on debugging, but only for hosts that answers to the name `crankykit.test`. Make it your own by changing the name to something that works on your development setup.
 4. The `.htaccess` file is located in the public web root directory.  It's the "stock" Kirby `.htaccess` file with the addition of the directive 
 
     ```Header set Cache-Control "no cache, private"``` 
@@ -58,73 +57,58 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
     * Line 8, much like Line 3, is written to determine the _parent_ of the public web root directory because on Siteground it's possible to install files in directories that are its siblings. This may not be the case on your hosting provider. The only thing that's required is that the directory of the non-public files are reachable via a relative path from the public web root.
 
 6. The `/media' directory will be created in the public web root. It can be deleted at any time and it will be regenerated as needed.
+
 7. A `/storage` directory has been added as a sibling to `/content` and `/ site` to contain `/accounts`, `/cache`, and `/sessions`.
    These subdirectories should be writable by the web server.
-8. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics. A basic CSS scaffold is included. I'm a fan of Andy Bell's [CUBE CSS](https://cube.fyi/) methodology and my scaffold is more or less based on that. Once upon a time I used a lot of SASS, but I've sort of moved away from it as CSS has matured and we have cascade layers now.  This is one of those [quirks](#quirks) I mentioned earlier.
-9. This is the overall directory structure
+8. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics. A basic CSS scaffold is included. I'm a fan of Andy Bell's [CUBE CSS](https://cube.fyi/) methodology and my scaffold is more or less based on that. Once upon a time I used a lot of SASS, but I've sort of moved away from it as CSS has matured and we have cascade layers now.  This is one of those [quirks](#quirks) I mentioned earlier. You can remove this without affecting anything else.
 
-        /some-directory
-
-            /content
-
-                /error
-
-                /home
-
-                - site.txt
-
-            /kirby
-
-                - bootstrap.php
-
-                [...]
-
-            /public_html
-
-                - .htaccess
-
-                - index.php
-
-                /assets
-
-                    /css
-
-                        /partials
-
-                            - _composition.css
-
-                            - _utility.css
-
-                            - _block.css
-
-                            - _exception.css
-
-                            - _tokens.css
-
-                        - main.css
-
-                        - main.css.map
-
-            /site
-
-                /blueprints
-
-                /config
-
-                    - config.crankykit.test.php
-
-                    - config.php
-
-                /snippets
-
-                /templates
-
-            /storage
-
-                /accounts
-
-                /cache
-
-                /sessions
+### Directory Structure as Installed
+<pre>
+    [INSTALLATION DIRECTORY]
+├── composer.json
+├── config.codekit3
+├── kirby/
+│ ├── [...]
+├── content/
+│ ├── error/
+│ │ └── error.txt
+│ ├── home/
+│ │ └── home.txt
+│ └── site.txt
+├── public_html/
+│ ├── assets/
+│ │ └── css/
+│ │     ├── main.css
+│ │     ├── main.css.map
+│ │     └── partials/
+│ │         ├── _block.css
+│ │         ├── _composition.css
+│ │         ├── _exception.css
+│ │         ├── _tokens.css
+│ │         └── _utility.css
+│ ├── index.php
+├── site/
+│ ├── blueprints/
+│ │ ├── pages/
+│ │ │ └── default.yml
+│ │ └── site.yml
+│ ├── config/
+│ │ ├── config.crankykit.test.php
+│ │ └── config.php
+│ ├── snippets/
+│ │ ├── foot.php
+│ │ ├── head.php
+│ │ ├── header.php
+│ │ └── index.html
+│ └── templates/
+│     └── default.php
+└── storage/
+    ├── accounts/
+    │ └── index.html
+    ├── cache/
+    │ └── index.html
+    └── sessions/
+        └── index.html
+</pre>
 
 
