@@ -167,105 +167,6 @@
       "oAP" : "\/public_html\/index.php",
       "oF" : 0
     },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/apple-touch-icon.png" : {
-      "ft" : 32768,
-      "iS" : 4115,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/apple-touch-icon.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/css\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 2,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/css\/style.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/favicon.png" : {
-      "ft" : 32768,
-      "iS" : 539,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/favicon.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/favicon.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/favicon.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/img\/icons.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/img\/icons.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/js\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/js\/index.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/js\/plugins.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/js\/plugins.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/js\/vendor.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/js\/vendor.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/README.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/README.html",
-      "oF" : 0
-    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -372,9 +273,9 @@
   },
   "projectAttributes" : {
     "creationDate" : 674232007.96621203,
-    "displayValue" : "crankykit",
+    "displayValue" : "mindlessmovies",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/apple-touch-icon.png",
+    "iconImageName" : "meme-kahn",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
