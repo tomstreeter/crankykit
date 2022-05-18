@@ -36,17 +36,17 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
 
 ## Details
  
-2. The public web root directory is called `/public_html` on Siteground hosting. You may need to adjust this to match whatever convention your hossting provider uses.
+1. The public web root directory is called `/public_html` on Siteground hosting. You may need to adjust this to match whatever convention your hossting provider uses.
 
-3. Two configuration files are included in `/site/config`.  
+1. Two configuration files are included in `/site/config`.  
     * `config.php` allows the panel to be installed on a remote server and changes the page slug for the panel from `myexample.com/panel` to `myexample.com/knockknock`. Seek professional help is that's the slug you want to use.
     * `config.crankykit.test.php` turns on debugging, but only for hosts that answers to the name `crankykit.test`. Make it your own by changing the name to something that works on your development setup.
-4. The `.htaccess` file is located in the public web root directory.  It's the "stock" Kirby `.htaccess` file with the addition of the directive 
+1. The `.htaccess` file is located in the public web root directory.  It's the "stock" Kirby `.htaccess` file with the addition of the directive 
 
     ```Header set Cache-Control "no cache, private"``` 
     
     to minimize the impact of Siteground's dynamic caching on Kirby license validation. See [this discussion](https://forum.getkirby.com/t/kirby-3-panel-not-updating-server-caching-or-license-key-issue/21444) for the gory details about why this is here. 
-5. `index.php` is located in `public_html` and is shown  below.
+1. `index.php` is located in `public_html` and is shown  below.
 
     It's useful to remember that, out-of-the-box, Kirby assumes all files and subdirectories are going into the public web root directory. This `index.php` file tells Kirby where to find things when they're not all in one directory. 
 
@@ -56,15 +56,15 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
     * Line 7 takes care of determining the path of the public web root directory.  It doesn't need to be specified anywhere else.
     * Line 8, much like Line 3, is written to determine the _parent_ of the public web root directory because on Siteground it's possible to install files in directories that are its siblings. This may not be the case on your hosting provider. The only thing that's required is that the directory of the non-public files are reachable via a relative path from the public web root.
 
-6. The `/media' directory will be created in the public web root. It can be deleted at any time and it will be regenerated as needed.
+1. The `/media' directory will be created in the public web root once the site is active. It can be deleted at any time and it will be regenerated as needed.
 
-7. A `/storage` directory has been added as a sibling to `/content` and `/ site` to contain `/accounts`, `/cache`, and `/sessions`.
-   These subdirectories should be writable by the web server.
-8. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics. A basic CSS scaffold is included. I'm a fan of Andy Bell's [CUBE CSS](https://cube.fyi/) methodology and my scaffold is more or less based on that. Once upon a time I used a lot of SASS, but I've sort of moved away from it as CSS has matured and we have cascade layers now.  This is one of those [quirks](#quirks) I mentioned earlier. You can remove this without affecting anything else.
+1. A `/storage` directory has been added as a sibling to `/content` and `/ site` It contain the directories that the web server must have write permissions for: `/accounts`, `/cache`, and `/sessions`.
+   
+1. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics. A basic CSS scaffold is included. I'm a fan of Andy Bell's [CUBE CSS](https://cube.fyi/) methodology and my scaffold is more or less based on that. Once upon a time I used a lot of SASS, but I've sort of moved away from it as CSS has matured and we have cascade layers now.  This is one of those [quirks](#quirks) I mentioned earlier. You can remove this without affecting anything else.
 
 ### Directory Structure as Installed
 <pre>
-    [INSTALLATION DIRECTORY]
+[YOUR INSTALLATION DIRECTORY]
 ├── composer.json
 ├── config.codekit3
 ├── kirby/
@@ -102,13 +102,13 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
 │ │ └── index.html
 │ └── templates/
 │     └── default.php
-└── storage/
-    ├── accounts/
-    │ └── index.html
-    ├── cache/
-    │ └── index.html
-    └── sessions/
-        └── index.html
+└─ storage/
+  ├── accounts/
+  │ └── index.html
+  ├── cache/
+  │ └── index.html
+  └── sessions/
+      └── index.html
 </pre>
 
 
