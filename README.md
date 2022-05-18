@@ -58,7 +58,7 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
 
 1. The `/media' directory will be created in the public web root once the site is active. It can be deleted at any time and it will be regenerated as needed.
 
-1. A `/storage` directory has been added as a sibling to `/content` and `/ site` It contain the directories that the web server must have write permissions for: `/accounts`, `/cache`, and `/sessions`.
+1. A `/storage` directory has been added as a sibling to `/content` and `/site` It contain the directories that the web server must have write permissions for: `/accounts`, `/cache`, and `/sessions`.
    
 1. An `/assets` directory has been added to the public web root to hold CSS, JS, fonts, and graphics. A basic CSS scaffold is included. I'm a fan of Andy Bell's [CUBE CSS](https://cube.fyi/) methodology and my scaffold is more or less based on that. Once upon a time I used a lot of SASS, but I've sort of moved away from it as CSS has matured and we have cascade layers now.  This is one of those [quirks](#quirks) I mentioned earlier. You can remove this without affecting anything else.
 
