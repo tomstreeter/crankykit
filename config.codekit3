@@ -71,6 +71,30 @@
       "oAP" : "\/kirby",
       "oF" : 0
     },
+    "\/listing.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/listing.txt",
+      "oF" : 0
+    },
+    "\/listing2.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/listing2.txt",
+      "oF" : 0
+    },
+    "\/listing3.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/listing3.txt",
+      "oF" : 0
+    },
     "\/public_html\/.htaccess" : {
       "cB" : 0,
       "ft" : 8192,
@@ -273,9 +297,15 @@
   },
   "projectAttributes" : {
     "creationDate" : 674232007.96621203,
+<<<<<<< HEAD
     "displayValue" : "mindlessmovies",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "meme-kahn",
+=======
+    "displayValue" : "crankykit",
+    "displayValueWasSetByUser" : 1,
+    "iconImageName" : "\/public_html\/media\/panel\/f9335d6b469643eb39665df09fba0be2\/apple-touch-icon.png",
+>>>>>>> a91ba39 (Configkit update)
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
