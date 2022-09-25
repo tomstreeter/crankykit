@@ -16,7 +16,7 @@ This was made for my personal use and there are no guarantees it will work for y
 
 ## About Kirby CMS
 
-I'm a big fan of [Kirby CMS] (https://getkirby.com). It's a great piece of software backed by a great little company and a community of loyal users. I have no connection with them except as a happily *paying* customer.  *Kirby is not free software*.  If you're going to use it in a public environment, you need to buy a license either directly from them or through a Kirby plugin author's website (same price, just helps support the Kirby ecoystem). You can find [everything you'd ever want to know] (https://getkirby.com/license/2022-03-15) about licensing Kirby on their website.  
+I'm a big fan of [Kirby CMS](https://getkirby.com). It's a great piece of software backed by a great little company and a community of loyal users. I have no connection with them except as a happily *paying* customer.  *Kirby is not free software*.  If you're going to use it in a public environment, you need to buy a license either directly from them or through a Kirby plugin author's website (same price, just helps support the Kirby ecoystem). You can find [everything you'd ever want to know](https://getkirby.com/license/2022-03-15) about licensing Kirby on their website.  
 
 ## <a name="submodules">Installation</a>
 
@@ -24,7 +24,7 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
 
 1. You can download this repository as a `.zip` file, unzip it, and place _the contents_ of the unzipped directory where you want it to go. You'll see a `/kirby` directory, but it'll be empty. 
 
-    You can then download the [necessary Kirby files as a `.zip`](https://github.com/getkirby/kirby/archive/refs/heads/main.zip) and copy the _contents_ of the unzipped directory inside the empty `/kirby` directory.
+    You can then download the [necessary Kirby files as a `.zip`] (https://github.com/getkirby/kirby/archive/refs/heads/main.zip) and copy the _contents_ of the unzipped directory inside the empty `/kirby` directory.
 1. You can clone the repository *and* download the Kirby files all at once by navigating to the directory where you want to install this repository and using the command 
     
     ```git clone https://github.com/tomstreeter/crankykit.git --recurse-submodules```.
