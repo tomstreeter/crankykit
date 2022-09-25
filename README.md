@@ -14,6 +14,10 @@ This might be enough to scare you off: The core Kirby system files are reference
 
 This was made for my personal use and there are no guarantees it will work for you. Its <a name="quirks">quirks</a> are mine; you're welcome to your own. I'm making this freely available. I hope you find it useful. I'll answer questions that I can, but this is very definitely an "as-is" thing. I haven't used every hosting service under the sun and I don't plan to take it up as a hobby. I'm the *worst* possible source of information about your hosting account.  Your hosting provider is the best source of information.
 
+## About Kirby CMS
+
+I'm a big fan of [Kirby CMS] (https://getkirby.com). It's a great piece of software backed by a great little company and a community of loyal users. I have no connection with them except as a happily *paying* customer.  *Kirby is not free software*.  If you're going to use it in a public environment, you need to buy a license either directly from them or through a Kirby plugin author's website (same price, just helps support the Kirby ecoystem). You can find [everything you'd ever want to know] (https://getkirby.com/license/2022-03-15) about licensing Kirby on their website.  
+
 ## <a name="submodules">Installation</a>
 
 Kirby files are referenced as a Git submodule because it lets me treat those files as a black box (as one does if one wishes to be happy). There's a very practical implication to this strategy: The actual files that live inside the `/kirby` directory aren't included in this repository except as a pointer. This is how you can get them:
