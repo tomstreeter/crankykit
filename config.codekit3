@@ -151,14 +151,6 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/kirby\/.github\/stale.yml" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/kirby\/.github\/stale.yml",
-      "oF" : 0
-    },
     "\/kirby\/.github\/workflows\/backend.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -191,12 +183,28 @@
       "oAP" : "\/kirby\/.github\/workflows\/release.yml",
       "oF" : 0
     },
+    "\/kirby\/.github\/workflows\/stale.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/.github\/workflows\/stale.yml",
+      "oF" : 0
+    },
     "\/kirby\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/.gitignore",
+      "oF" : 0
+    },
+    "\/kirby\/.gitmodules" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/.gitmodules",
       "oF" : 0
     },
     "\/kirby\/.php-cs-fixer.dist.php" : {
@@ -2209,6 +2217,25 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/kirby\/panel\/dist\/js\/vuedraggable.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/dist\/js\/vuedraggable.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/kirby\/panel\/jsconfig.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/jsconfig.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/kirby\/panel\/package-lock.json" : {
       "ft" : 524288,
