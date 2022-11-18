@@ -1131,6 +1131,14 @@
       "oAP" : "\/kirby\/config\/fields\/number.php",
       "oF" : 0
     },
+    "\/kirby\/config\/fields\/object.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/config\/fields\/object.php",
+      "oF" : 0
+    },
     "\/kirby\/config\/fields\/pages.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2897,6 +2905,14 @@
       "oAP" : "\/kirby\/panel\/src\/components\/Forms\/Field\/NumberField.vue",
       "oF" : 0
     },
+    "\/kirby\/panel\/src\/components\/Forms\/Field\/ObjectField.vue" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/src\/components\/Forms\/Field\/ObjectField.vue",
+      "oF" : 0
+    },
     "\/kirby\/panel\/src\/components\/Forms\/Field\/PagesField.vue" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3342,6 +3358,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/kirby\/panel\/src\/components\/Forms\/Previews\/ObjectFieldPreview.vue" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/src\/components\/Forms\/Previews\/ObjectFieldPreview.vue",
+      "oF" : 0
     },
     "\/kirby\/panel\/src\/components\/Forms\/Previews\/PagesFieldPreview.vue" : {
       "cB" : 0,
@@ -4154,6 +4178,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/panel\/src\/components\/Layout\/TableCell.vue",
+      "oF" : 0
+    },
+    "\/kirby\/panel\/src\/components\/Layout\/TableUpdateStatusCell.vue" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/src\/components\/Layout\/TableUpdateStatusCell.vue",
       "oF" : 0
     },
     "\/kirby\/panel\/src\/components\/Layout\/Tabs.vue" : {
@@ -5001,6 +5033,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/kirby\/panel\/src\/helpers\/field.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/kirby\/panel\/src\/helpers\/field.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/kirby\/panel\/src\/helpers\/index.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -5272,6 +5315,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/kirby\/panel\/src\/helpers\/string.ucwords.test.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/kirby\/panel\/src\/helpers\/string.unescapeHTML.test.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/src\/helpers\/string.unescapeHTML.test.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -5907,6 +5961,86 @@
       "oAP" : "\/kirby\/src\/Api\/Model.php",
       "oF" : 0
     },
+    "\/kirby\/src\/Blueprint\/Collection.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/Collection.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/Config.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/Config.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/Extension.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/Extension.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/Factory.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/Factory.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/Node.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/Node.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/NodeI18n.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/NodeI18n.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/NodeIcon.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/NodeIcon.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/NodeProperty.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/NodeProperty.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/NodeString.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/NodeString.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Blueprint\/NodeText.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Blueprint\/NodeText.php",
+      "oF" : 0
+    },
     "\/kirby\/src\/Cache" : {
       "ft" : 65536,
       "oA" : 1,
@@ -5967,6 +6101,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/src\/Cms\/AppUsers.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Cms\/AppUsersImpersonateProxy.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Cms\/AppUsersImpersonateProxy.php",
       "oF" : 0
     },
     "\/kirby\/src\/Cms\/Auth.php" : {
@@ -6641,6 +6783,14 @@
       "oAP" : "\/kirby\/src\/Cms\/System.php",
       "oF" : 0
     },
+    "\/kirby\/src\/Cms\/System\/UpdateStatus.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Cms\/System\/UpdateStatus.php",
+      "oF" : 0
+    },
     "\/kirby\/src\/Cms\/Template.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -6927,6 +7077,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/src\/Exception\/PermissionException.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Field\/FieldOptions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Field\/FieldOptions.php",
       "oF" : 0
     },
     "\/kirby\/src\/Filesystem\/Asset.php" : {
@@ -7257,14 +7415,6 @@
       "oAP" : "\/kirby\/src\/Http\/Router.php",
       "oF" : 0
     },
-    "\/kirby\/src\/Http\/Server.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/kirby\/src\/Http\/Server.php",
-      "oF" : 0
-    },
     "\/kirby\/src\/Http\/Uri.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7351,6 +7501,46 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/src\/Image\/Location.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Option\/Option.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Option\/Option.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Option\/Options.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Option\/Options.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Option\/OptionsApi.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Option\/OptionsApi.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Option\/OptionsProvider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Option\/OptionsProvider.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Option\/OptionsQuery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Option\/OptionsQuery.php",
       "oF" : 0
     },
     "\/kirby\/src\/Panel\/Dialog.php" : {
@@ -7849,6 +8039,110 @@
       "oAP" : "\/kirby\/src\/Toolkit\/Xml.php",
       "oF" : 0
     },
+    "\/kirby\/src\/Uuid\/BlockUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/BlockUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/FieldUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/FieldUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/FileUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/FileUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/HasUuids.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/HasUuids.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/Identifiable.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/Identifiable.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/ModelUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/ModelUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/PageUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/PageUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/SiteUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/SiteUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/StructureUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/StructureUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/Uri.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/Uri.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/UserUuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/UserUuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/Uuid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/Uuid.php",
+      "oF" : 0
+    },
+    "\/kirby\/src\/Uuid\/Uuids.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/src\/Uuid\/Uuids.php",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Api\/ApiTest.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7871,6 +8165,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Api\/ModelTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Blueprint\/NodeI18nTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Blueprint\/NodeI18nTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Blueprint\/TestCase.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Blueprint\/TestCase.php",
       "oF" : 0
     },
     "\/kirby\/tests\/bootstrap.php" : {
@@ -8058,6 +8368,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Cms\/Api\/routes\/LanguagesRoutesTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/Api\/routes\/LockRoutesTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Api\/routes\/LockRoutesTest.php",
       "oF" : 0
     },
     "\/kirby\/tests\/Cms\/Api\/routes\/PagesRoutesTest.php" : {
@@ -8323,6 +8641,94 @@
       "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppPluginsTest\/site\/plugins-loader\/test5.php",
       "oF" : 0
     },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.10.1.2.3.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.10.1.2.3.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.getkirby.com.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.getkirby.com.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.trykirby.com.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/config.trykirby.com.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/env.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env1\/env.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.10.1.2.3.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.10.1.2.3.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.getkirby.com.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.getkirby.com.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.trykirby.com.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/config.trykirby.com.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/env.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options-env2\/env.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options\/config.10.1.2.3.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options\/config.10.1.2.3.php",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Cms\/App\/fixtures\/AppTest\/options\/config.getkirby.com.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8498,6 +8904,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Auth\/mocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Auth\/mocks.php",
+      "oF" : 0
     },
     "\/kirby\/tests\/Cms\/Auth\/StatusTest.php" : {
       "cB" : 0,
@@ -9549,6 +9963,54 @@
       "oAP" : "\/kirby\/tests\/Cms\/Permissions\/PermissionsTest.php",
       "oF" : 0
     },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-composer-noversionset\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-composer-noversionset\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-composer-override\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-composer-override\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-composer\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-composer\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-invalid\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-invalid\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-prefix\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version-prefix\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin-version\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/kirby\/tests\/Cms\/Plugins\/fixtures\/plugin\/composer.json" : {
       "ft" : 524288,
       "oA" : 0,
@@ -9556,6 +10018,22 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/updateStatus\/plugins\/getkirby\/public.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/updateStatus\/plugins\/getkirby\/public.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/Plugins\/fixtures\/vendor\/composer\/installed.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/Plugins\/fixtures\/vendor\/composer\/installed.php",
+      "oF" : 0
     },
     "\/kirby\/tests\/Cms\/Plugins\/PluginAssetsTest.php" : {
       "cB" : 0,
@@ -9821,12 +10299,220 @@
       "oAP" : "\/kirby\/tests\/Cms\/Structures\/StructureTest.php",
       "oF" : 0
     },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/SystemTest\/security.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/SystemTest\/security.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/getkirby.com\/plugins\/getkirby\/invalid-json.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/getkirby.com\/plugins\/getkirby\/invalid-json.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/getkirby.com\/plugins\/getkirby\/public.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/getkirby.com\/plugins\/getkirby\/public.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/getkirby.com\/security.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/getkirby.com\/security.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/basic.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/basic.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/eol-link.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/eol-link.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/incidents-cascade.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/incidents-cascade.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/incidents-loop.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/incidents-loop.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/incidents-severity.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/incidents-severity.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-incident.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-incident.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-message.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-message.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-url.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-url.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-version.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/invalid-constraint-version.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/missing-constraint-incident.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/missing-constraint-incident.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/missing-constraint-message.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/missing-constraint-message.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-incidents.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-incidents.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-latest.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-latest.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-messages.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-messages.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-url-entry.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-url-entry.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-urls.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-urls.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-version-entry.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-version-entry.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-versions.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/no-versions.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/url-entry-without-changes.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/url-entry-without-changes.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/version-entry-without-latest.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/fixtures\/UpdateStatusTest\/logic\/version-entry-without-latest.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Cms\/System\/mocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/mocks.php",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Cms\/System\/SystemTest.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Cms\/System\/SystemTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Cms\/System\/UpdateStatusTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Cms\/System\/UpdateStatusTest.php",
       "oF" : 0
     },
     "\/kirby\/tests\/Cms\/TestCase.php" : {
@@ -10285,6 +10971,22 @@
       "oAP" : "\/kirby\/tests\/Exception\/PermissionExceptionTest.php",
       "oF" : 0
     },
+    "\/kirby\/tests\/Field\/FieldOptionsTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Field\/FieldOptionsTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Field\/TestCase.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Field\/TestCase.php",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Filesystem\/AssetTest.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -10355,6 +11057,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Filesystem\/fixtures\/f\/load\/B\/B.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Filesystem\/fixtures\/f\/load\/output.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Filesystem\/fixtures\/f\/load\/output.php",
       "oF" : 0
     },
     "\/kirby\/tests\/Filesystem\/fixtures\/f\/test.txt" : {
@@ -10655,6 +11365,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Form\/Fields\/NumberFieldTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Form\/Fields\/ObjectFieldTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Form\/Fields\/ObjectFieldTest.php",
       "oF" : 0
     },
     "\/kirby\/tests\/Form\/Fields\/PagesFieldTest.php" : {
@@ -11025,14 +11743,6 @@
       "oAP" : "\/kirby\/tests\/Http\/RouteTest.php",
       "oF" : 0
     },
-    "\/kirby\/tests\/Http\/ServerTest.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/kirby\/tests\/Http\/ServerTest.php",
-      "oF" : 0
-    },
     "\/kirby\/tests\/Http\/UriTest.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -11241,6 +11951,46 @@
       "oAP" : "\/kirby\/tests\/Image\/TestCase.php",
       "oF" : 0
     },
+    "\/kirby\/tests\/Option\/fixtures\/data.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Option\/fixtures\/data.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Option\/OptionsApiTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Option\/OptionsApiTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Option\/OptionsQueryTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Option\/OptionsQueryTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Option\/OptionsTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Option\/OptionsTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Option\/OptionTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Option\/OptionTest.php",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Panel\/Areas\/AccountDialogsTest.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -11296,6 +12046,22 @@
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Panel\/Areas\/FileDropdownsTest.php",
       "oF" : 0
+    },
+    "\/kirby\/tests\/Panel\/Areas\/fixtures\/SystemTest\/plugins\/getkirby\/public.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Panel\/Areas\/fixtures\/SystemTest\/plugins\/getkirby\/public.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/tests\/Panel\/Areas\/fixtures\/SystemTest\/security.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Panel\/Areas\/fixtures\/SystemTest\/security.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/kirby\/tests\/Panel\/Areas\/InstallationTest.php" : {
       "cB" : 0,
@@ -13995,6 +14761,14 @@
       "oAP" : "\/kirby\/tests\/Sane\/fixtures\/xml\/allowed\/doctype-valid.xml",
       "oF" : 0
     },
+    "\/kirby\/tests\/Sane\/fixtures\/xml\/allowed\/gpx.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Sane\/fixtures\/xml\/allowed\/gpx.xml",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Sane\/fixtures\/xml\/allowed\/internal-source.xml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -14259,12 +15033,28 @@
       "oAP" : "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/doctype-xhtml.xml",
       "oF" : 0
     },
+    "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-1_disallowed.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-1_disallowed.xml",
+      "oF" : 0
+    },
     "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-1.xml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-1.xml",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-2_disallowed.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-2_disallowed.xml",
       "oF" : 0
     },
     "\/kirby\/tests\/Sane\/fixtures\/xml\/sanitized\/external-source-2.xml" : {
@@ -15238,6 +16028,110 @@
       "oAP" : "\/kirby\/tests\/Toolkit\/XmlTest.php",
       "oF" : 0
     },
+    "\/kirby\/tests\/Uuid\/BlockUuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/BlockUuidTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/FileUuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/FileUuidTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/HasUuidsTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/HasUuidsTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/IdentifiableModelActionsTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/IdentifiableModelActionsTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/PageUuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/PageUuidTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/PermalinksTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/PermalinksTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/SiteUuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/SiteUuidTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/StructureUuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/StructureUuidTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/TestCase.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/TestCase.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/UriTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/UriTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/UserUuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/UserUuidTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/UuidsTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/UuidsTest.php",
+      "oF" : 0
+    },
+    "\/kirby\/tests\/Uuid\/UuidTest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/tests\/Uuid\/UuidTest.php",
+      "oF" : 0
+    },
     "\/kirby\/vendor\/autoload.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -15367,6 +16261,118 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/kirby\/vendor\/composer\/LICENSE",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/composer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/kirby\/vendor\/composer\/semver\/LICENSE" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/LICENSE",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Comparator.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Comparator.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/CompilingMatcher.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/CompilingMatcher.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/Bound.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/Bound.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/Constraint.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/Constraint.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/ConstraintInterface.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/ConstraintInterface.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/MatchAllConstraint.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/MatchAllConstraint.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/MatchNoneConstraint.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/MatchNoneConstraint.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/MultiConstraint.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Constraint\/MultiConstraint.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Interval.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Interval.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Intervals.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Intervals.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/Semver.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/Semver.php",
+      "oF" : 0
+    },
+    "\/kirby\/vendor\/composer\/semver\/src\/VersionParser.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/vendor\/composer\/semver\/src\/VersionParser.php",
       "oF" : 0
     },
     "\/kirby\/vendor\/filp\/whoops\/composer.json" : {
@@ -15711,14 +16717,6 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
-    },
-    "\/kirby\/vendor\/laminas\/laminas-escaper\/composer.lock" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/kirby\/vendor\/laminas\/laminas-escaper\/composer.lock",
-      "oF" : 0
     },
     "\/kirby\/vendor\/laminas\/laminas-escaper\/COPYRIGHT.md" : {
       "cB" : 0,
@@ -16815,11 +17813,11 @@
       "oAP" : "\/public_html\/index.php",
       "oF" : 0
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/apple-touch-icon.png" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/apple-touch-icon.png" : {
       "ft" : 32768,
       "iS" : 4115,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/apple-touch-icon.png",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/apple-touch-icon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -16828,7 +17826,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/css\/style.css" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/css\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -16836,15 +17834,15 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 2,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/css\/style.css",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/css\/style.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/favicon.png" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/favicon.png" : {
       "ft" : 32768,
       "iS" : 539,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/favicon.png",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/favicon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -16853,55 +17851,66 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/favicon.svg" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/favicon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/favicon.svg",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/favicon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/img\/icons.svg" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/img\/icons.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/img\/icons.svg",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/img\/icons.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/js\/index.js" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/index.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/js\/index.js",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/index.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/js\/plugins.js" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/plugins.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/js\/plugins.js",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/plugins.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/js\/vendor.js" : {
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/vendor.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/js\/vendor.js",
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/vendor.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/vuedraggable.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/js\/vuedraggable.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -17107,6 +18116,14 @@
       "oAP" : "\/storage\/sessions\/1659724337.a7de9b2208b24ab35414.sess",
       "oF" : 0
     },
+    "\/storage\/sessions\/1667861519.204e4a07bdd13108107a.sess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/storage\/sessions\/1667861519.204e4a07bdd13108107a.sess",
+      "oF" : 0
+    },
     "\/storage\/sessions\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -17126,7 +18143,7 @@
     "creationDate" : 674232007.96621203,
     "displayValue" : "crankykit",
     "displayValueWasSetByUser" : 1,
-    "iconImageName" : "\/public_html\/media\/panel\/549a453716cbdbd52f75ee95979e323c\/apple-touch-icon.png",
+    "iconImageName" : "\/public_html\/media\/panel\/53cc413239097e69bbbb4c72a5fc8294\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
