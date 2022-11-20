@@ -1,37 +1,14 @@
 {
-  "name": "getkirby/plainkit",
-  "description": "Kirby Plainkit",
-  "type": "project",
-  "keywords": [
-    "kirby",
-    "cms",
-    "starterkit"
-  ],
-  "homepage": "https://getkirby.com",
-  "authors": [
-    {
-      "name": "Bastian Allgeier",
-      "email": "bastian@getkirby.com",
-      "homepage": "https://getkirby.com"
-    }
-  ],
-  "support": {
-    "email": "support@getkirby.com",
-    "issues": "https://github.com/getkirby/starterkit/issues",
-    "forum": "https://forum.getkirby.com",
-    "source": "https://github.com/getkirby/starterkit"
+  "require" : {
+    "php" : ">=8.0.0 <8.2.0"
   },
-  "require": {
-    "php": ">=7.4.0 <8.2.0",
-    "getkirby/cms": "^3.6"
+  "extra" : {
+    "kirby-cms-path" : "kirby"
   },
-  "scripts": {
-    "start": [
-      "Composer\\Config::disableProcessTimeout",
-      "@php -S localhost:8000 kirby/router.php"
-    ]
+  "config" : {
+    "optimize-autoloader" : true
   },
-  "config": {
-    "optimize-autoloader": true
-  }
+  "name" : "crankybearmedia\/crankykitkit",
+  "description" : "An opinionated starter version of Kirby CMS that manages Kirby via Git submodules, not Composer.",
+  "type" : "project"
 }
