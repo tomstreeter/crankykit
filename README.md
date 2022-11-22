@@ -24,43 +24,52 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
 
 1. You can download this repository as a `.zip` file, unzip it, and place _the contents_ of the unzipped directory where you want it to go. You'll see a `/kirby` directory, but it'll be empty. 
 
-    You can then download the [necessary Kirby files as a `.zip`](https://github.com/getkirby/kirby/archive/refs/heads/main.zip) and copy the _contents_ of the unzipped directory inside the empty `/kirby` directory.
+	You can then download the [necessary Kirby files as a `.zip`](https://github.com/getkirby/kirby/archive/refs/heads/main.zip) and copy the _contents_ of the unzipped directory inside the empty `/kirby` directory.
 1. You can clone the repository *and* download the Kirby files all at once by navigating to the directory where you want to install this repository and using the command 
-    
-    ```git clone https://github.com/tomstreeter/crankykit.git --recurse-submodules```.
+		```
+		git clone https://github.com/tomstreeter/crankykit.git --recurse-submodules
+		```
 1. If you (for whatever reason) clone this repository using *only* the basic `git clone` command (without ```--recurse-submodules```) you will *not* automatically download the Kirby files (the directory will be there, but it will be empty). Navigate into the Kirby directory and issue the command
+		```
+	git submodule init
+		```
+	then
+		```
+	git submodule update
+		```
+	Regardless of how you downloaded and installed the submodule, you can always run the
+		```
+	git submodule update
+		```
+	command again as Kirby updates come along. *Don't forget to commit your project after updating the submodule!* 
 
-    ```git submodule init```, 
-
-    then
-
-    ```git submodule update```.
-
-    Any time you need to update the Kirby files in the latter two scenarios, just run the command ```git submodule update``` again. The Kirby documentation encourages you to delete ```/public_html/media``` any time the Kirby version changes. The directory will be regenerated as needed.
+	The Kirby documentation encourages you to delete ```/public_html/media``` any time the Kirby version changes. The directory will be regenerated as needed.
 
 ## Details
  
 1. The public web root directory is called `/public_html` on Siteground hosting. You may need to adjust this to match whatever convention your hossting provider uses.
 
 1. Two configuration files are included in `/site/config`.  
-    * `config.php` allows the panel to be installed on a remote server and changes the page slug for the panel from `myexample.com/panel` to `myexample.com/knockknock`. Seek professional help is that's the slug you want to use.
-    * `config.crankykit.test.php` turns on debugging, but only for hosts that answers to the name `crankykit.test`. Make it your own by changing the name to something that works on your development setup.
+	* `config.php` allows the panel to be installed on a remote server and changes the page slug for the panel from `myexample.com/panel` to `myexample.com/knockknock`. Seek professional help is that's the slug you want to use.
+	* `config.crankykit.test.php` turns on debugging, but only for hosts that answers to the name `crankykit.test`. Make it your own by changing the name to something that works on your development setup.
 1. The `.htaccess` file is located in the public web root directory.  It's the "stock" Kirby `.htaccess` file with the addition of the directive 
-
-    ```Header set Cache-Control "no cache, private"``` 
-    
-    to minimize the impact of Siteground's dynamic caching on Kirby license validation. See [this discussion](https://forum.getkirby.com/t/kirby-3-panel-not-updating-server-caching-or-license-key-issue/21444) for the gory details about why this is here. 
+		```
+	Header set Cache-Control "no cache, private"
+		``` 
+	to minimize the impact of Siteground's dynamic caching on Kirby license validation. See [this discussion](https://forum.getkirby.com/t/kirby-3-panel-not-updating-server-caching-or-license-key-issue/21444) for the gory details about why this is here. 
 1. `index.php` is located in `public_html` and is shown  below.
 
-    It's useful to remember that, out-of-the-box, Kirby assumes all files and subdirectories are going into the public web root directory. This `index.php` file tells Kirby where to find things when they're not all in one directory. 
+	It's useful to remember that, out-of-the-box, Kirby assumes all files and subdirectories are going into the public web root directory. This `index.php` file tells Kirby where to find things when they're not all in one directory. 
 
-    <img width="688" alt="screenshot of index.php" src="https://user-images.githubusercontent.com/284185/165156578-c05be891-641d-44b5-92ba-22588e260044.png">
+	<img width="688" alt="screenshot of index.php" src="https://user-images.githubusercontent.com/284185/165156578-c05be891-641d-44b5-92ba-22588e260044.png">
 
-    * Line 3  assumes that the `/kirby` directory is a _sibling_ of the public web root directory. You may need to adjust this if your hosting setup is different.
-    * Line 7 takes care of determining the path of the public web root directory.  It doesn't need to be specified anywhere else.
-    * Line 8, much like Line 3, is written to determine the _parent_ of the public web root directory because on Siteground it's possible to install files in directories that are its siblings. This may not be the case on your hosting provider. The only thing that's required is that the directory of the non-public files are reachable via a relative path from the public web root.
+	* Line 3  assumes that the `/kirby` directory is a _sibling_ of the public web root directory. You may need to adjust this if your hosting setup is different.
 
-1. The `/media' directory will be created in the public web root once the site is active. It can be deleted at any time and it will be regenerated as needed.
+	* Line 7 takes care of determining the path of the public web root directory.  It doesn't need to be specified anywhere else.
+
+	* Line 8, much like Line 3, is written to determine the _parent_ of the public web root directory because on Siteground it's possible to install files in directories that are its siblings. This may not be the case on your hosting provider. The only thing that's required is that the directory of the non-public files are reachable via a relative path from the public web root.
+
+1. The `/media` directory will be created in the public web root once the site is active. It can be deleted at any time and it will be regenerated as needed.
 
 1. A `/storage` directory has been added as a sibling to `/content` and `/site` It contain the directories that the web server must have write permissions for: `/accounts`, `/cache`, and `/sessions`.
    
@@ -112,7 +121,7 @@ Kirby files are referenced as a Git submodule because it lets me treat those fil
   ├── cache/
   │ └── index.html
   └── sessions/
-      └── index.html
+	  └── index.html
 </pre>
 
 
