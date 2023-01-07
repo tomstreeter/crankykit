@@ -1,42 +1,45 @@
-/*=============================================
-=            UTILITY            =
-=============================================*/
-.stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+/*===============================
+*            Utility            *
+===============================*/
+.text-center {
+	text-align: center;
 }
 
-.stack>*,
-.stack.recursive * {
-    margin-block: 0;
+.text-right {
+	text-align: right;
 }
 
-.stack>*+*,
-.stack.recursive *+* {
-    margin-block-start: var(--stack-gap, var(--space-s));
+.italic {
+	font-style: italic;
 }
 
-.box {
-    color: var(--text-color, var(--black));
-    background-color: var(--bg-color, transparent);
-    border: var(--border-color, transparent) var(--border-width, var(--space-3xs)) var(--border-style, solid);
-    border-radius: var(--border-radius, 0rem);
-    padding: var(--box-pad, var(--space-m));
-    outline: 0.125rem solid transparent;
-    outline-offset: -0.125rem;
+figure.left {
+	float: left;
 }
 
-box * {
-    color: inherit;
+figure.center {
+	margin-inline: auto;
 }
 
-.box.invert {
-    color: var(--color-light);
-    background-color: var(--color-dark);
+figure.right {
+	float: right;
 }
 
+figure.small {
+	inline-size: 33%;
+}
 
+figure.medium {
+	inline-size: 50%;
+}
 
+figure.large {
+	inline-size: 66%;
+}
 
-/*=====  End of UTILITY  ======*/
+figure.full {
+	inline-size: 100%;
+	float: clear;
+}
+
+/*=====  End of Utility  ======*/

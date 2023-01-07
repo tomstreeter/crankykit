@@ -1,18 +1,21 @@
-/*=============================================
-=            Global            =
-=============================================*/
+/*==============================
+*            Global            *
+==============================*/
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
-* {
-	max-inline-size: 60ch;
-}
+
 
 html {
 	line-height: 1.5;
+}
+
+* {
+	max-inline-size: 65ch;
 }
 
 html,
@@ -21,9 +24,8 @@ div,
 header,
 nav,
 main,
-footer,
-hr {
-	max-inline-size: 90rem;
+footer {
+	max-inline-size: none;
 }
 
 /* Remove default margin */
@@ -45,21 +47,28 @@ dd {
 
 body {
 	text-rendering: optimizeSpeed;
-	font-family: var(--system);
-	color: var(--black);
-	background-color: var(--white);
+	font-family: var(--sans-serif);
+	color: var(--color-black);
 	min-block-size: 100vh;
-	margin: var(--space-l) var(--space-xl);
+	min-inline-size: 100svw;
+	margin-block: 0;
+	margin-inline: auto;
 }
 
+
+
 img,
-picture {
+picture,
+figure {
 	max-inline-size: 100%;
 	display: block;
 }
 
+
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+	-webkit-text-decoration-skip: ink;
 	text-decoration-skip-ink: auto;
 }
 
@@ -69,8 +78,10 @@ h3,
 h4,
 h5,
 h6 {
-	max-inline-size: 50ch;
+	font-family: var(--serif);
+	max-inline-size: 55ch;
 	font-weight: 700;
+	text-transform: capitalize;
 }
 
 h1 {
@@ -110,7 +121,20 @@ h6 {
 hr {
 	display: block;
 	inline-size: 100%;
-	color: currentColor;
+	color: var(--color-accent-light);
+	margin-block: var(--space-m-l);
+}
+
+.page-wrapper {
+	max-inline-size: 100svw;
+	padding: var(--space-s-3xl);
+	--stack-gap: 0;
+}
+
+@media (max-width: 38rem) {
+	.page-wrapper {
+		padding: 0;
+	}
 }
 
 
@@ -129,6 +153,16 @@ hr {
 	outline-offset: max(2px, 0.15em);
 }
 
+blockquote {
+	padding-inline: var(--space-l-xl);
+	margin-block-start: var(--space-xs-s);
+}
+
+figure+*,
+blockquote+* {
+	margin-block-start: var(--space-m-l);
+}
+
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -139,7 +173,9 @@ hr {
 	*,
 	*::before,
 	*::after {
+		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
+		-webkit-animation-iteration-count: 1 !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
@@ -147,4 +183,4 @@ hr {
 
 }
 
-/*=====  End of GLOBAL  ======*/
+/*=====  End of Global  ======*/

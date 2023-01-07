@@ -5,14 +5,13 @@
 snippet('header');
 snippet('main-open');
 ?>
-<h3>
-	<?= $page->title() ?>
-</h3>
+
+
+
 
 
 
 <?php
-
 snippet('main-close');
-snippet("footer");
+snippet('footer');
 ?>

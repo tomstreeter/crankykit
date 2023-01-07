@@ -1,5 +1,112 @@
-/*=============================================
-=            Composition            =
-=============================================*
+/*===================================
+*            Composition            *
+===================================*/
 
-/*=====  End of COMPOSITION  ======*/
+/**
+*
+* Stack
+*
+*/
+
+
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.stack>*,
+.stack.recursive * {
+	margin-block: 0;
+}
+
+.stack>*+*,
+.stack.recursive *+* {
+	-webkit-margin-before: var(--stack-gap, var(--space-s, 1rem));
+	margin-block-start: var(--stack-gap, var(--space-s, 1rem));
+}
+
+.stack.centered {
+	align-items: center;
+}
+
+.stack>.centered {
+	align-self: center;
+}
+
+
+/**
+* Center
+*/
+
+.center {
+	box-sizing: content-box;
+	margin-inline: auto;
+	max-inline-size: var(--content-width, 65ch);
+}
+
+.center.intrinsic {
+	box-sizing: content-box;
+	margin-inline: auto;
+	max-inline-size: var(--content-width, 65ch);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/*
+* Box
+*/
+
+
+.box {
+	color: var(--text-color, var(--color-black));
+	background-color: var(--bg-color, transparent);
+	border: var(--border-color, transparent) var(--border-width, var(--space-3xs)) var(--border-style, solid);
+	border-radius: var(--border-radius, 0rem);
+	padding: var(--box-pad, var(--space-s));
+	margin: var(--box-margin, 0);
+	outline: var(--space-2xs) solid transparent;
+	outline-offset: calc(var(--space-2xs) * -1);
+}
+
+box * {
+	color: inherit;
+}
+
+.box.invert {
+	color: var(--color-light);
+	background-color: var(--color-dark);
+}
+
+/**
+* Sidebar
+*/
+
+.with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--sidebar-gap, var(--space-l));
+}
+
+/*The location of the sidebar.  Default is sidebar on right*/
+.with-sidebar> :last-child,
+.with-sidebar.left> :first-child,
+.with-sidebar.right> :last-child {
+	flex-grow: 1;
+	flex-basis: var(--sidebar-max, content);
+}
+
+/*Main content*/
+.with-sidebar> :first-child,
+.with-sidebar.left> :last-child,
+.with-sidebar.right> :first-child {
+	flex-grow: 999;
+	flex-basis: 0;
+	min-inline-size: var(--not-sidebar, 50%);
+}
+
+
+/*==================  End Composition  ==================*/

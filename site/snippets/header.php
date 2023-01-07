@@ -1,7 +1,5 @@
-/**
-* @var Kirby\Cms\App\Page
-*/
+<?php snippet('page-open') ?>
 
-<h1>
-	<?= $page->title() ?>
-</h1>
+<header>
+	<?php snippet('banner') ?>
+</header>
