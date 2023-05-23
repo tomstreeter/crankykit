@@ -8,6 +8,27 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--text-color: var(--color-black);
+	--background-color: var(--color-white);
+	--primary-color: var(--color-primary-light);
+	--secondary-color: var(--color-secondary-light);
+	--attention-color: var(--color-attention-light);
+	--accent-color: var(--color-accent-light);
+	--info-color: var(--color-info-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: var(--color-white);
+		--background-color: var(--color-black);
+		--primary-color: var(--color-primary-dark);
+		--secondary-color: var(--color-secondary-dark);
+		--attention-color: var(--color-attention-dark);
+		--accent-color: var(--color-accent-dark);
+		--info-color: var(--color-info-dark);
+	}
+}
 
 
 html {
@@ -15,7 +36,7 @@ html {
 }
 
 * {
-	max-inline-size: 65ch;
+	max-inline-size: 70ch;
 }
 
 html,
@@ -30,6 +51,11 @@ footer {
 
 /* Remove default margin */
 body,
+div,
+nav,
+main,
+header,
+footer,
 h1,
 h2,
 h3,
@@ -41,14 +67,18 @@ hr,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+ol,
+li {
 	margin: 0;
 }
 
 body {
+	color: var(--text-color);
+	background-color: var(--background-color);
 	text-rendering: optimizeSpeed;
 	font-family: var(--sans-serif);
-	color: var(--color-black);
 	min-block-size: 100vh;
 	min-inline-size: 100svw;
 	margin-block: 0;
@@ -121,20 +151,8 @@ h6 {
 hr {
 	display: block;
 	inline-size: 100%;
-	color: var(--color-accent-light);
-	margin-block: var(--space-m-l);
-}
-
-.page-wrapper {
-	max-inline-size: 100svw;
-	padding: var(--space-s-3xl);
-	--stack-gap: 0;
-}
-
-@media (max-width: 38rem) {
-	.page-wrapper {
-		padding: 0;
-	}
+	color: var(--color-accent);
+	margin-block: var(--space-s-m);
 }
 
 
@@ -151,16 +169,6 @@ hr {
 :focus-visible {
 	outline: max(1px, 0.1em) dashed currentColor;
 	outline-offset: max(2px, 0.15em);
-}
-
-blockquote {
-	padding-inline: var(--space-l-xl);
-	margin-block-start: var(--space-xs-s);
-}
-
-figure+*,
-blockquote+* {
-	margin-block-start: var(--space-m-l);
 }
 
 
@@ -184,3 +192,4 @@ blockquote+* {
 }
 
 /*=====  End of Global  ======*/
+/*# sourceMappingURL=_global.css.map */

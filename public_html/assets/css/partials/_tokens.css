@@ -32,136 +32,77 @@
 
 /* Colors */
 
-:root,
-.hoperatives {
-	/*Primary Values*/
-	--color-primary-dark: hsl(131, 55%, 18%);
-	--color-primary-light: hsl(69, 64%, 45%);
-	/*Banner Text*/
-	--color-banner-text-dark: var(--color-srm-29);
-	--color-banner-text-light: hsl(60, 100%, 94%);
-	/*Secondary Values*/
-	--color-secondary-dark: var(--color-srm-15);
-	--color-secondary-light: var(--color-srm-05);
-	/*Background Values*/
-	--color-background-dark: var(--color-srm-30);
-	--color-background-light: hsl(61, 40%, 80%);
-	/*Attention Values*/
-	--color-attention-dark: hsl(0, 100%, 30%);
-	--color-attention-light: hsl(0, 100%, 95%);
-	/*Accent Values*/
-	--color-accent-dark: var(--color-srm-15);
-	--color-accent-light: var(--color-srm-03);
-	/*Info Values*/
-	--color-info-dark: var(--color-srm-25);
-	--color-info-light: var(--color-srm-01);
-	/*Black*/
-	--color-black: hsl(180, 1%, 1%);
-	/*Gray Values*/
-	--color-gray-dark: hsl(180, 1%, 20%);
-	--color-gray-light: hsl(180, 1%, 95%);
-	/*White*/
-	--color-white: hsl(61, 100%, 97%);
-}
-
-:root,
-.srm {
-	--color-srm-01: hsl(64, 89%, 78%);
-	--color-srm-02: hsl(61, 91%, 66%);
-	--color-srm-03: hsl(60, 93%, 52%);
-	--color-srm-04: hsl(59, 84%, 50%);
-	--color-srm-05: hsl(55, 78%, 49%);
-	--color-srm-06: hsl(51, 70%, 49%);
-	--color-srm-07: hsl(46, 60%, 51%);
-	--color-srm-08: hsl(41, 53%, 50%);
-	--color-srm-09: hsl(37, 53%, 49%);
-	--color-srm-10: hsl(33, 53%, 49%);
-	--color-srm-11: hsl(29, 56%, 49%);
-	--color-srm-12: hsl(25, 55%, 48%);
-	--color-srm-13: hsl(23, 58%, 47%);
-	--color-srm-14: hsl(21, 55%, 45%);
-	--color-srm-15: hsl(17, 49%, 44%);
-	--color-srm-16: hsl(18, 48%, 40%);
-	--color-srm-17: hsl(17, 48%, 37%);
-	--color-srm-18: hsl(18, 47%, 33%);
-	--color-srm-19: hsl(22, 56%, 27%);
-	--color-srm-20: hsl(23, 56%, 23%);
-	--color-srm-21: hsl(28, 73%, 17%);
-	--color-srm-22: hsl(358, 32%, 22%);
-	--color-srm-23: hsl(9, 33%, 16%);
-	--color-srm-24: hsl(4, 27%, 12%);
-	--color-srm-25: hsl(5, 23%, 11%);
-	--color-srm-26: hsl(6, 25%, 8%);
-	--color-srm-27: hsl(9, 19%, 7%);
-	--color-srm-28: hsl(10, 20%, 6%);
-	--color-srm-29: hsl(10, 23%, 5%);
-	--color-srm-30: hsl(170, 37%, 3%);
-}
-
-
-
-/* Typography */
-
-/* Typefaces */
-
 :root {
+	--color-primary-dark: hsl(188, 100%, 20%);
+	--color-primary-light: hsl(183, 100%, 86%);
+	--color-secondary-dark: hsl(278, 100%, 20%);
+	--color-secondary-light: hsl(300, 100%, 96%);
+	--color-attention-dark: hsl(8, 100%, 20%);
+	--color-attention-light: hsl(21, 100%, 94%);
+	--color-accent-dark: hsl(101, 100%, 18%);
+	--color-accent-light: hsl(98, 100%, 85%);
+	--color-info-dark: hsl(38, 100%, 20%);
+	--color-info-light: hsl(46, 100%, 88%);
+	--color-black: hsl(0, 0%, 10%);
+	--color-gray-dark: hsl(0, 0%, 30%);
+	--color-gray-light: hsl(0, 0%, 77%);
+	--color-white: hsl(0, 0%, 98%);
+
+	/* Typefaces */
 	--serif: "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", "helvetica", Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 	--mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
-}
 
-/* Type Sizes */
+	/* Type Sizes */
+	/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-/* @link https://utopia.fyi/type/calculator?c=328,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl|s-2xl|s-3xl&g=s,l,2xl,12 */
-
-:root {
-	--step--2: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.80rem);
+	--step--2: clamp(0.69rem, calc(0.67rem + 0.15vw), 0.80rem);
 	--step--1: clamp(0.83rem, calc(0.79rem + 0.23vw), 1.00rem);
-	--step-0: clamp(1.00rem, calc(0.93rem + 0.35vw), 1.25rem);
+	--step-0: clamp(1.00rem, calc(0.93rem + 0.34vw), 1.25rem);
 	--step-1: clamp(1.20rem, calc(1.10rem + 0.50vw), 1.56rem);
-	--step-2: clamp(1.44rem, calc(1.29rem + 0.71vw), 1.95rem);
-	--step-3: clamp(1.73rem, calc(1.53rem + 0.99vw), 2.44rem);
-	--step-4: clamp(2.07rem, calc(1.80rem + 1.36vw), 3.05rem);
-	--step-5: clamp(2.49rem, calc(2.11rem + 1.84vw), 3.82rem);
-}
+	--step-2: clamp(1.44rem, calc(1.30rem + 0.71vw), 1.95rem);
+	--step-3: clamp(1.73rem, calc(1.53rem + 0.98vw), 2.44rem);
+	--step-4: clamp(2.07rem, calc(1.80rem + 1.35vw), 3.05rem);
+	--step-5: clamp(2.49rem, calc(2.12rem + 1.83vw), 3.82rem);
 
-/* Spacing */
-
-/* @link https://utopia.fyi/space/calculator?c=328,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl|s-2xl|s-3xl&g=s,l,2xl,12 */
-
-:root {
+	/* Spacing */
+	/* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl|s-2xl|s-3xl|m-xl|m-2xl|m-3xl|l-2xl|l-3xl|xl-3xl&g=s,l,xl,12 */
 	--space-3xs: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem);
-	--space-2xs: clamp(0.50rem, calc(0.46rem + 0.17vw), 0.63rem);
+	--space-2xs: clamp(0.50rem, calc(0.47rem + 0.17vw), 0.63rem);
 	--space-xs: clamp(0.75rem, calc(0.70rem + 0.26vw), 0.94rem);
-	--space-s: clamp(1.00rem, calc(0.93rem + 0.35vw), 1.25rem);
-	--space-m: clamp(1.50rem, calc(1.39rem + 0.52vw), 1.88rem);
+	--space-s: clamp(1.00rem, calc(0.93rem + 0.34vw), 1.25rem);
+	--space-m: clamp(1.50rem, calc(1.40rem + 0.52vw), 1.88rem);
 	--space-l: clamp(2.00rem, calc(1.86rem + 0.69vw), 2.50rem);
-	--space-xl: clamp(3.00rem, calc(2.79rem + 1.04vw), 3.75rem);
-	--space-2xl: clamp(4.00rem, calc(3.72rem + 1.39vw), 5.00rem);
-	--space-3xl: clamp(6.00rem, calc(5.57rem + 2.08vw), 7.50rem);
+	--space-xl: clamp(3.00rem, calc(2.79rem + 1.03vw), 3.75rem);
+	--space-2xl: clamp(4.00rem, calc(3.72rem + 1.38vw), 5.00rem);
+	--space-3xl: clamp(6.00rem, calc(5.59rem + 2.07vw), 7.50rem);
 
 	/* One-up pairs */
-	--space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.52vw), 0.63rem);
-	--space-2xs-xs: clamp(0.50rem, calc(0.38rem + 0.61vw), 0.94rem);
+	--space-3xs-2xs: clamp(0.25rem, calc(0.15rem + 0.52vw), 0.63rem);
+	--space-2xs-xs: clamp(0.50rem, calc(0.38rem + 0.60vw), 0.94rem);
 	--space-xs-s: clamp(0.75rem, calc(0.61rem + 0.69vw), 1.25rem);
-	--space-s-m: clamp(1.00rem, calc(0.75rem + 1.22vw), 1.88rem);
-	--space-m-l: clamp(1.50rem, calc(1.22rem + 1.39vw), 2.50rem);
-	--space-l-xl: clamp(2.00rem, calc(1.50rem + 2.43vw), 3.75rem);
-	--space-xl-2xl: clamp(3.00rem, calc(2.43rem + 2.78vw), 5.00rem);
-	--space-2xl-3xl: clamp(4.00rem, calc(3.00rem + 4.86vw), 7.50rem);
+	--space-s-m: clamp(1.00rem, calc(0.76rem + 1.21vw), 1.88rem);
+	--space-m-l: clamp(1.50rem, calc(1.22rem + 1.38vw), 2.50rem);
+	--space-l-xl: clamp(2.00rem, calc(1.52rem + 2.41vw), 3.75rem);
+	--space-xl-2xl: clamp(3.00rem, calc(2.45rem + 2.76vw), 5.00rem);
+	--space-2xl-3xl: clamp(4.00rem, calc(3.03rem + 4.83vw), 7.50rem);
 
 	/* Custom pairs */
-	--space-s-l: clamp(1.00rem, calc(0.57rem + 2.08vw), 2.50rem);
-	--space-s-xl: clamp(1.00rem, calc(0.22rem + 3.82vw), 3.75rem);
-	--space-s-2xl: clamp(1.00rem, calc(-0.14rem + 5.56vw), 5.00rem);
-	--space-s-3xl: clamp(1.00rem, calc(-0.85rem + 9.03vw), 7.50rem);
-}
+	--space-s-l: clamp(1.00rem, calc(0.59rem + 2.07vw), 2.50rem);
+	--space-s-xl: clamp(1.00rem, calc(0.24rem + 3.79vw), 3.75rem);
+	--space-s-2xl: clamp(1.00rem, calc(-0.10rem + 5.52vw), 5.00rem);
+	--space-s-3xl: clamp(1.00rem, calc(-0.79rem + 8.97vw), 7.50rem);
+	--space-m-xl: clamp(1.50rem, calc(0.88rem + 3.10vw), 3.75rem);
+	--space-m-2xl: clamp(1.50rem, calc(0.53rem + 4.83vw), 5.00rem);
+	--space-m-3xl: clamp(1.50rem, calc(-0.16rem + 8.28vw), 7.50rem);
+	--space-l-2xl: clamp(2.00rem, calc(1.17rem + 4.14vw), 5.00rem);
+	--space-l-3xl: clamp(2.00rem, calc(0.48rem + 7.59vw), 7.50rem);
+	--space-xl-3xl: clamp(3.00rem, calc(1.76rem + 6.21vw), 7.50rem);
 
-/* @link https://utopia.fyi/grid/calculator?c=328,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl|s-2xl|s-3xl&g=s,l,2xl,12 */
 
-:root {
+	/* @link https://utopia.fyi/grid/calculator?c=320,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl|s-2xl|s-3xl|m-xl|m-2xl|m-3xl|l-2xl|l-3xl|xl-3xl&g=2xs,l,2xl,12 */
 	--grid-max-width: 92.50rem;
-	--grid-gutter: var(--space-s-l, clamp(1.00rem, calc(0.57rem + 2.08vw), 2.50rem));
+	--grid-gutter: var(--space-2xs-l, clamp(0.50rem, calc(-0.05rem + 2.76vw), 2.50rem));
 	--grid-columns: 12;
 }
 
@@ -176,5 +117,5 @@
 	gap: var(--grid-gutter);
 }
 
-
 /*=====  End of Design Tokens  ======*/
+/*# sourceMappingURL=_tokens.css.map */

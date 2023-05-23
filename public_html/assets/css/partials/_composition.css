@@ -36,6 +36,8 @@
 }
 
 
+
+
 /**
 * Center
 */
@@ -62,8 +64,8 @@
 
 
 .box {
-	color: var(--text-color, var(--color-black));
-	background-color: var(--bg-color, transparent);
+	color: var(--text-color);
+	background-color: var(--background-color, transparent);
 	border: var(--border-color, transparent) var(--border-width, var(--space-3xs)) var(--border-style, solid);
 	border-radius: var(--border-radius, 0rem);
 	padding: var(--box-pad, var(--space-s));
@@ -76,10 +78,6 @@ box * {
 	color: inherit;
 }
 
-.box.invert {
-	color: var(--color-light);
-	background-color: var(--color-dark);
-}
 
 /**
 * Sidebar
@@ -88,11 +86,10 @@ box * {
 .with-sidebar {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--sidebar-gap, var(--space-l));
+	gap: var(--sidebar-gap, var(--space-s));
 }
 
-/*The location of the sidebar.  Default is sidebar on right*/
-.with-sidebar> :last-child,
+/*The location of the sidebar.*/
 .with-sidebar.left> :first-child,
 .with-sidebar.right> :last-child {
 	flex-grow: 1;
@@ -100,7 +97,6 @@ box * {
 }
 
 /*Main content*/
-.with-sidebar> :first-child,
 .with-sidebar.left> :last-child,
 .with-sidebar.right> :first-child {
 	flex-grow: 999;
@@ -108,5 +104,18 @@ box * {
 	min-inline-size: var(--not-sidebar, 50%);
 }
 
+/**
+ * Cluster
+ */
+
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--cluster-gap, var(--space-s));
+	justify-content: var(--cluster-justify, flex-start);
+	align-items: var(--cluster-align, center);
+}
+
 
 /*==================  End Composition  ==================*/
+/*# sourceMappingURL=_composition.css.map */

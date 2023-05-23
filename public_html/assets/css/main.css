@@ -1,7 +1,7 @@
 @import './partials/_tokens.css' layer(tokens);
 @import './partials/_global.css' layer(global);
-@import './partials/_composition.css' layer(composition);
-@import './partials/_utility.css' layer(utility);
-@import './partials/_block.css' layer(block);
-@import './partials/_exception.css' layer(exception);
+@import './partials/_composition.css' layer(cube);
+@import './partials/_utility.css' layer(cube);
+@import './partials/_block.css' layer(cube);
+@import './partials/_exception.css' layer(cube);
 /*# sourceMappingURL=main.css.map */
