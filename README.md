@@ -1,5 +1,9 @@
 # Crankykit: A riff on Kirby Plainkit
 
+## Archive Note
+
+This version of Crankykit relies on Git submodules for installing Kirby, and for ... reasons ... I've (unenthusiastically) changed my workflow to using Composer to spin up new instances and maintain them. This was always primarily for me, and I don't want to keep it up to date. I made it public mainly for folks who are new to Kirby but didn't know how to organize the directories when using shared hosting that allows for shell access outside the public web root, and it's still valid for that even archived.
+
 ## Overview
 
 This is an opinionated version of [Kirby Plainkit](https://GitHub.com/getkirby/plainkit.git) meant to be used on shared hosting plans that allow the user to load files _outside_ the public web root directory. It's configured to work on [Siteground](https://siteground.com) hosting out of the box, but can be easily adapted to other hosts. There are no symlinks; the only files in the public web root directory are those that absolutely have to be there. Everything else is safely outside the web server's gaze.
